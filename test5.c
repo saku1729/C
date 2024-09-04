@@ -18,9 +18,8 @@ int main(int argc, char **argv)
     {
         a += b[i];
     }
+
     printf("%d-%d\n", rank, a);
-
     MPI_Finalize();
-
     return 0;
 }
