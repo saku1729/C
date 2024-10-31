@@ -19,14 +19,7 @@ int main(void)
         }
         else
         {
-            if (a < num)
-            {
-                printf("%dより大きいです。\n", a);
-            }
-            else
-            {
-                printf("%dより小さいです。\n", a);
-            }
+            printf("違います。\n");
         }
     }
     return 0;
