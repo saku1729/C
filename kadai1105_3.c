@@ -4,8 +4,8 @@
 #include <time.h>
 int main(void)
 {
+    int enter;
     int x, y;
-    int count = 0;
     int medal = 10;
     int bet;
     int small_or_large;
@@ -18,7 +18,9 @@ int main(void)
         {
             y = rand() % 13 + 1;
         }
-        printf("Medal：%d\n", medal);
+        printf("Medal：%d", medal);
+        enter = getchar();
+        printf("1st card：%d\n", x);
         printf("small(0) or large(1):");
         scanf("%d", &small_or_large);
         while (small_or_large != 0 && small_or_large != 1)
@@ -33,17 +35,20 @@ int main(void)
             printf("bet(1~%d):", medal);
             scanf("%d", &bet);
         }
+        printf("2nd card：%d\n", y);
         if (small_or_large == 1)
         {
             if (x < y)
             {
                 medal += bet * 2;
-                printf("You win!!\n\n");
+                printf("You win!!\n");
+                enter = getchar();
             }
             else
             {
                 medal -= bet;
-                printf("You lose...\n\n");
+                printf("You lose...\n");
+                enter = getchar();
             }
         }
         else
@@ -51,12 +56,14 @@ int main(void)
             if (x > y)
             {
                 medal += bet * 2;
-                printf("You win!!\n\n");
+                printf("You win!!\n");
+                enter = getchar();
             }
             else
             {
                 medal -= bet;
-                printf("You lose...\n\n");
+                printf("You lose...\n");
+                enter = getchar();
             }
         }
     }
