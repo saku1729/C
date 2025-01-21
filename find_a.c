@@ -3,8 +3,8 @@
 int main()
 {
     int count = 0;
-    char word[100];
-    printf("文字列を入力してください。\n");
+    char word[101];
+    printf("100文字までの文字列を入力してください。(空白は除く)\n");
     scanf("%s", word);
     for (int i = 0; i < 100; i++)
     {

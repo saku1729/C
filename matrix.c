@@ -25,17 +25,35 @@ int main()
             }
         }
     }
-    printf("A+B\n");
+    printf("A\n");
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
         {
-            printf("%d ", c[i][j]);
+            printf("%2d ", a[i][j]);
         }
         printf("\n");
     }
-    printf("\n");
-    printf("AB\n");
+    printf("\nB\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%2d ", b[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nこのとき、AとBの和と積は以下の通りです。\n");
+    printf("\nA+B\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%2d ", c[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nAB\n");
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
